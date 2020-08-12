@@ -34,29 +34,29 @@ class GameBoard
 		@slots: is an array of column arrays
     
 	methods: 
-    	add_disc: adds player disk to lowest available slot in chosen column.
-    	column_full?: check if column is full before player places a token
-    	board_full?: check if board is filled with tokens
+		add_disc: adds player disk to lowest available slot in chosen column.
+		column_full?: check if column is full before player places a token
+		board_full?: check if board is filled with tokens
     
 # player.rb
 class Player
 	instance variables:
 		@name: player name
-    	@disk: their chosen disk
-	critical methods: 
-		take_turn: gets input to pass to GameBoard.add_disc 
-    	valid_input?: will reject user input if its unusable
-    	computer_turn: may include an algorithm for cpu player to make turns for 1 player games.
+		@disk: their chosen disk
+	methods: 
+		take_turn: gets input to pass to GameBoard.add_disc
+		valid_input?: will reject user input if its unusable
+		computer_turn: may include an algorithm for cpu player to make turns for 1 player games.
     
 # game.rb 
 class Game
 	instance variables:
-    	@board: Will be an instance of gameboard
-    	@player1
-    	@player2
-    	@player_turn
+		@board:	instance of gameboard class
+		@player1: instance of player class
+		@player2: instance of player class
+		@player_turn
     
-	critical methods:
+	methods:
 		start_game: displays the title, board, and instructions then runs main game loop
 			title: displays an ASCII art title 
       
