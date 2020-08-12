@@ -34,6 +34,7 @@ class GameBoard
 		@slots: is an array of column arrays
     
 	methods: 
+		display: prints board into terminal
 		add_disc: adds player disk to lowest available slot in chosen column.
 		column_full?: check if column is full before player places a token
 		board_full?: check if board is filled with tokens
@@ -59,8 +60,8 @@ class Game
 	methods:
 		start_game: displays the title, board, and instructions then runs main game loop
 			title: displays an ASCII art title 
-      
-			display: displays @board in the shape of a Connect Four game 
+			
+			@board.display: method in gameboard class
       
 			instructions: displays the game instructions
       
